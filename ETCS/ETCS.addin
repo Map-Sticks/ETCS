@@ -1,0 +1,11 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>ETCS</Name>
+        <Assembly>ETCS\ETCS.dll</Assembly>
+        <AddInId>36A54479-A643-4330-B804-757D87EB221E</AddInId>
+        <FullClassName>ETCS.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+        <VendorEmail></VendorEmail>
+    </AddIn>
+</RevitAddIns>

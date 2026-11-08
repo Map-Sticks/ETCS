@@ -1,0 +1,33 @@
+﻿<Window x:Class="ETCS.PanelCircuitNamingDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Assign First Circuit Number" Height="200" Width="400">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Panel Selection -->
+            <RowDefinition Height="Auto"/>
+            <!-- First Circuit Number -->
+            <RowDefinition Height="Auto"/>
+            <!-- Buttons -->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Panel Selection -->
+        <Label Grid.Row="0" Grid.Column="0" Content="Select Panel:" VerticalAlignment="Center"/>
+        <ComboBox x:Name="cmbPanels" Grid.Row="0" Grid.Column="1" Margin="5" SelectionChanged="cmbPanels_SelectionChanged"/>
+
+        <!-- First Circuit Number -->
+        <Label Grid.Row="1" Grid.Column="0" Content="First Circuit Number:" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtFirstCircuitNumber" Grid.Row="1" Grid.Column="1" Margin="5" Text="1"/>
+
+        <!-- OK and Cancel Buttons -->
+        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+            <Button x:Name="btnOk" Content="OK" Width="75" Margin="5" Click="btnOk_Click"/>
+            <Button x:Name="btnCancel" Content="Cancel" Width="75" Margin="5" Click="btnCancel_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
